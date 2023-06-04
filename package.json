@@ -1,0 +1,24 @@
+{
+  "name": "focusrite-technical-test",
+  "version": "1.0.0",
+  "description": "Technical test as part of the interview process",
+  "main": "main.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james-marshall/focusrite-technical-test.git"
+  },
+  "author": "James Marshall",
+  "license": "ISC",
+  "homepage": "https://github.com/james-marshall/focusrite-technical-test#readme",
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "jest": "^29.5.0"
+  }
+}
