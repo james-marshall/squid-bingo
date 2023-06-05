@@ -59,18 +59,26 @@ const partTwoCards = [
   },
 ];
 
+let msg = 'There were no winners this time.';
+
 const partOneShowAnswer = (cards, numbers) => {
   const ele = document.getElementById('partOneAnswer');
   const winningCards = getWinningCards(cards, numbers);
-  const msg = `Yes, the card will win. It completed ${winningCards[0].orientation} ${winningCards[0].orientationIndex + 1} on draw number ${winningCards[0].drawIndex + 1}.`;
+
+  if (winningCards.length) {
+    msg = `Yes, the card will win. It completed ${winningCards[0].orientation} ${winningCards[0].orientationIndex + 1} on draw number ${winningCards[0].drawIndex + 1}.`;
+  }
   ele.innerText = msg;
 };
 
 const partTwoShowAnswer = (cards, numbers) => {
   const ele = document.getElementById('partTwoAnswer');
   const winningCards = getWinningCards(cards, numbers);
-  const fastestWinner = getFastestWinner(winningCards);
-  const msg = `Card ${fastestWinner.cardIndex + 1} will win first. It completed ${fastestWinner.orientation} ${fastestWinner.orientationIndex + 1} on draw number ${fastestWinner.drawIndex + 1}.`;
+
+  if (winningCards.length) {
+    const fastestWinner = getFastestWinner(winningCards);
+    msg = `Card ${fastestWinner.cardIndex + 1} will win first. It completed ${fastestWinner.orientation} ${fastestWinner.orientationIndex + 1} on draw number ${fastestWinner.drawIndex + 1}.`;
+  }
   ele.innerText = msg;
 };
 
