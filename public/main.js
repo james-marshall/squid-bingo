@@ -1,5 +1,13 @@
-import getFastestWinner from './helpers/get-fastest-winner.js';
-import getWinningCards from './helpers/get-winning-cards.js';
+/**
+ *
+ *   @project         squid-bingo
+ *   @author          James Marshall <james.marshall@outlook.com>
+ *   @description     Technical test as part of an interview process
+ *
+ * */
+
+import getFastestWinner from './components/get-fastest-winner.js';
+import getWinningCards from './components/get-winning-cards.js';
 
 const numbersCalled = [
   7, 4, 9, 5, 11, 17, 23, 2, 0, 14, 21, 24, 10, 16, 13, 6, 15, 25, 12, 22, 18, 20, 8, 19, 3, 26, 1,

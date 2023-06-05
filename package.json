@@ -1,24 +1,32 @@
 {
-  "name": "focusrite-technical-test",
+  "name": "squid-bingo",
   "version": "1.0.0",
-  "description": "Technical test as part of the interview process",
+  "description": "Technical test as part of an interview process",
   "main": "main.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "npm run lint -- --fix",
-    "test": "test"
+    "start": "http-server -a localhost -o",
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/james-marshall/focusrite-technical-test.git"
+    "url": "git+https://github.com/james-marshall/squid-bingo.git"
   },
   "author": "James Marshall",
   "license": "ISC",
-  "homepage": "https://github.com/james-marshall/focusrite-technical-test#readme",
+  "homepage": "https://github.com/james-marshall/squid-bingo#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.22.4",
     "eslint": "^8.42.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.27.5",
+    "http-server": "^14.1.1",
     "jest": "^29.5.0"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }
